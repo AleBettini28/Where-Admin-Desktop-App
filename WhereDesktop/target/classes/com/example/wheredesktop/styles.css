@@ -1,0 +1,243 @@
+/* Default style for top-bar buttons */
+.top-bar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 5 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-family: "Arial";
+
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: transparent;
+}
+
+/* Hover effect to show the colored underline */
+.top-bar-button:hover {
+    -fx-border-color: transparent transparent #00FF64 transparent;
+}
+
+.top-bar-button.selected {
+    -fx-border-color: transparent transparent #00FF64 transparent; /* Persistent underline */
+}
+
+/* Style for the main grey box */
+.vbox {
+    -fx-background-color: #4E4D4D;/* Dark grey background */
+    -fx-border-color: transparent;
+    -fx-border-width: 1; /* Thin border */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0.2, 0, 5); /* Drop shadow */
+    -fx-padding: 30; /* Space inside the box */
+}
+
+
+/* WHITE LABEL */
+.label {
+    -fx-text-fill: white;
+}
+
+/* WHERE TITLE LABEL */
+.where-label{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* ERROR LABEL*/
+.error-label {
+    -fx-text-fill: #ff6f61; /* Light red text */
+    -fx-font-size: 12px; /* Smaller font size */
+}
+
+
+/* CHECKBOX FOR SHOW PASSWORD */
+.check-box .box {
+    -fx-border-color: #6C6C6C; /* Green border for the tick box */
+    -fx-border-width: 1px; /* Border width for the tick box */
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-radius: 3px; /* Slightly rounded corners for the tick box */
+    -fx-padding: 2px; /* Optional padding inside the box */
+}
+
+/* Style the tick inside the checkbox when selected */
+.check-box .box:selected {
+    -fx-background-color: #00FF64; /* Green fill when checked */
+    -fx-border-color: #0064FF; /* Blue border when selected */
+}
+
+/* Hover effect for the checkbox box */
+.check-box .box:hover {
+    -fx-border-color: #00FF64; /* Light blue border on hover */
+}
+
+/* Disabled state styling for the checkbox box */
+.check-box:disabled .box {
+    -fx-border-color: #A9A9A9; /* Gray border when disabled */
+    -fx-background-color: transparent; /* Ensure transparency */
+}
+
+/* PASSWORD AND ADMIN FIELD  */
+.text-field, .password-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #cccccc; /* Light grey border */
+    -fx-border-width: 1;
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 5; /* Spacing inside the field */
+}
+
+/* Style for input fields */
+.input-field {
+    -fx-background-color: #6C6C6C; /* Light grey background */
+    -fx-border-color: #d0d0d0; /* Slightly darker grey border */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-background-radius: 5; /* Match the rounded corners */
+    -fx-padding: 10; /* Add padding inside the field */
+    -fx-font-size: 14px; /* Adjust font size */
+    -fx-prompt-text-fill: #a0a0a0; /* Light grey for the placeholder text */
+    -fx-text-fill: #000000; /* Black text color for input */
+}
+
+/* Hover and focus effects for input fields */
+.input-field:focused {
+    -fx-border-color: rgba(0, 255, 100, 0.8); /* Light blue border on focus */
+    -fx-background-color: #7F7F7F; /* White background on focus */
+}
+
+/* LOGIN/LOGOUT BUTTONS */
+.glow-button {
+    -fx-background-color: #111; /* Dark background */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 3); /* Subtle default shadow */
+}
+
+/* Hover effect with smaller glow */
+.glow-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 100, 0.8), 10, 0.5, 0, 0), /* Reduced radius */
+                dropshadow(gaussian, rgba(0, 100, 255, 0.8), 10, 0.5, 0, 0); /* Reduced radius */
+}
+
+/* NORMAL BUTTONS */
+.glow-button-normal {
+    -fx-background-color: #111; /* Dark background */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.5, 0, 3); /* Subtle default shadow */
+}
+
+/* Hover effect with smaller glow */
+.glow-button-normal:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 100, 0.8), 8, 0, 0, 0), /* Reduced radius */
+                dropshadow(gaussian, rgba(0, 100, 255, 0.8), 8, 0, 0, 0); /* Reduced radius */
+}
+
+/*TABLE BUTTONS*/
+.glow-button-table {
+    -fx-background-color: #111; /* Dark background */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px;
+    -fx-padding: 5 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.5, 0, 3); /* Subtle default shadow */
+}
+
+/* Hover effect with smaller glow */
+.glow-button-table:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 100, 0.8), 8, 0, 0, 0), /* Reduced radius */
+                dropshadow(gaussian, rgba(0, 100, 255, 0.8), 8, 0, 0, 0); /* Reduced radius */
+}
+
+/* Personalizza il colore delle barre */
+ .chart-bar {
+     -fx-bar-fill: #32CD32;
+ }
+
+
+ /* Personalizza il colore della linea */
+ .chart-line-symbol {
+     -fx-background-color: #32CD32;
+ }
+
+ /* Personalizza il colore dell'area sotto la linea */
+ .chart-line-series {
+     -fx-stroke: #32CD32;
+     -fx-stroke-width: 2px;
+ }
+
+ /* Personalizza il colore degli assi */
+ .chart-axis {
+     -fx-stroke: #333333;  /* Colore Nero per gli assi */
+ }
+
+ /* Personalizza il colore delle etichette sugli assi */
+ .chart-axis .axis-label {
+     -fx-text-fill: #333333;  /* Colore Nero per le etichette */
+ }
+
+ /* Personalizza il colore dello sfondo del grafico */
+ .chart {
+     -fx-background-color: #333333;  /* Colore di sfondo (Azzurro chiaro) */
+ }
+
+ /* Personalizza il colore della legenda */
+ .chart-legend {
+     -fx-text-fill: #333333; /* Colore del testo della legenda */
+ }
+
+ /* Cambia il colore dei singoli elementi della legenda */
+ .chart-legend-item {
+     -fx-text-fill: #333333;  /* Colore del testo delle voci della legenda */
+ }
+
+ /* STILE PER LA TABELLA */
+
+ #customTableView {
+    .table-view {
+         -fx-background-color: #4E4D4D; /* Grigio scuro per lo sfondo */
+         -fx-border-color: #3C3C3C; /* Grigio più scuro per i bordi */
+         -fx-border-width: 1px;
+         -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 3);
+     }
+
+     /* Stile per l'intestazione della tabella */
+     .table-view .column-header {
+         -fx-background-color: #3C3C3C; /* Sfondo grigio più scuro per l'intestazione */
+         -fx-border-color: #2C2C2C; /* Bordi più scuri */
+         -fx-border-width: 0 0 1px 0; /* Bordo inferiore per separare l'intestazione */
+         -fx-text-fill: white; /* Testo bianco */
+         -fx-font-size: 14px;
+         -fx-font-weight: bold;
+         -fx-alignment: center; /* Centrare il testo */
+     }
+
+     /* Stile per le righe della tabella */
+     .table-view .cell {
+         -fx-background-color: #4E4D4D; /* Sfondo delle celle */
+         -fx-text-fill: white; /* Testo bianco */
+         -fx-border-color: #3C3C3C; /* Bordi tra le righe */
+         -fx-border-width: 0 0 1px 0;
+         -fx-font-size: 13px;
+     }
+
+     /* Colore delle righe alternate */
+     .table-row-cell:odd {
+         -fx-background-color: #5C5B5B; /* Grigio leggermente più chiaro */
+     }
+
+     /* Quando una riga è selezionata */
+     .table-row-cell:selected {
+         -fx-background-color: #2C7EAE; /* Colore azzurro per la selezione */
+         -fx-text-fill: white; /* Testo bianco */
+         -fx-border-color: transparent; /* Rimuovi bordi che potrebbero coprire lo sfondo */
+         -fx-border-width: 0;
+     }
+ }
